@@ -33,3 +33,84 @@ def count_word_the(paragraph):
 paragraph = "goa is best"
 count = count_word_the(paragraph)
 print(f"The word 'the' appears {count} times in the paragraph.")
+
+
+
+
+# 5) Count the number of times the word "the" appears in a given paragraph.
+def count_the(paragraph):
+    words = paragraph.lower().split()
+    count = words.count("the")
+    return count
+
+paragraph = "The quick brown fox jumps over the lazy dog. The dog didn't mind."
+print(count_the(paragraph))
+# 6) Ask the user to input a character and count its occurrences in a given string.
+def count_character_occurrences(string, char):
+    return string.count(char)
+
+string = input("Enter a string: ")
+char = input("Enter a character to count its occurrences: ")
+print(count_character_occurrences(string, char))
+# 7) Create a function that counts and returns the occurrences of a specified word in a text.
+def count_word_occurrences(text, word):
+    words = text.lower().split()
+    count = words.count(word.lower())
+    return count
+
+text = "This is a sample text with the word sample appearing multiple times. Sample it."
+word = "sample"
+print(count_word_occurrences(text, word))
+
+
+
+# 10) Check if all characters in a given string are lowercase and print the result.
+def check_lowercase(string):
+    if string.islower():
+        print("All characters are lowercase.")
+    else:
+        print("Not all characters are lowercase.")
+
+check_lowercase("hello")
+check_lowercase("Hello")
+# 11) Create a function that takes a string and returns True if it is completely in lowercase, otherwise False.
+def check_lowercase(string):
+    if string.islower():
+        print("All characters are lowercase.")
+    else:
+        print("Not all characters are lowercase.")
+
+check_lowercase("hello")
+check_lowercase("Hello")
+# 12) Prompt the user to input a string and verify if it contains only lowercase letters.
+def check_user_input():
+    user_input = input("Enter a string: ")
+    if user_input.islower():
+        print("The string contains only lowercase letters.")
+    else:
+        print("The string does not contain only lowercase letters.")
+
+check_user_input()
+# 13) Verify if all the characters in a user-provided string are uppercase.
+def check_uppercase(string):
+    if string.isupper():
+        print("All characters are uppercase.")
+    else:
+        print("Not all characters are uppercase.")
+
+check_uppercase("HELLO")
+check_uppercase("Hello")
+# 14) Write a function that checks if a string consists entirely of uppercase letters and returns a boolean result.
+def is_all_uppercase(string):
+    return string.isupper()
+
+print(is_all_uppercase("HELLO"))
+print(is_all_uppercase("Hello"))
+# 15) Check and display whether a string input by the user is in uppercase.
+def check_user_input():
+    user_input = input("Enter a string: ")
+    if user_input.isupper():
+        print("The string contains only uppercase letters.")
+    else:
+        print("The string does not contain only uppercase letters.")
+check_user_input()

@@ -21,3 +21,5 @@ def multiply_sums_of_even_and_odd(numbers):
 
 numbers = [1, 2, 3, 4, 5, 6]
 print(multiply_sums_of_even_and_odd(numbers))
+
+print("I study in GOA")

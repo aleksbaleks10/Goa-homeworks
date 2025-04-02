@@ -1,32 +1,69 @@
-<!--
+/* 4) Align all flex items to the center of the container. */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-3) Create a flex container with three items arranged in a row.
-<div class="container">
-  <div class="item">Item 3</div>
-  <div class="item">Item 2</div>
-  <div class="item">Item 1</div>
-</div>
+/* 5) Distribute items evenly across the container with space between them. */
+.container {
+  display: flex;
+  justify-content: space-between;
+}
 
-4) Align all flex items to the center of the container.
+/* 6) Make one item grow twice as much as the others. */
+.container {
+  display: flex;
+}
 
-5) Distribute items evenly across the container with space between them.
+.item {
+  flex-grow: 1;
+}
 
-6) Make one item grow twice as much as the others.
+.item-special {
+  flex-grow: 2;
+}
 
-7) Reverse the order of the flex items.
+/* 7) Reverse the order of the flex items. */
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+}
 
-8) Align one specific item to the bottom while keeping others at the top.
+/* 8) Align one specific item to the bottom while keeping others at the top. */
+.container {
+  display: flex;
+  align-items: flex-start;
+}
 
-9) Wrap items to the next line when the container is too small.
+.item-bottom {
+  margin-top: auto;
+}
 
-10) Center all items both horizontally and vertically.
+/* 9) Wrap items to the next line when the container is too small. */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-11) Set all items to have equal width regardless of content size. 
+/* 10) Center all items both horizontally and vertically. */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-12) Change the direction of items to a vertical column. 
--->
-<div class="container">
-  <div class="item">Item 3</div>
-  <div class="item">Item 2</div>
-  <div class="item">Item 1</div>
-</div>
+/* 11) Set all items to have equal width regardless of content size. */
+.container {
+  display: flex;
+}
+
+.item {
+  flex: 1;
+}
+
+/* 12) Change the direction of items to a vertical column. */
+.container {
+  display: flex;
+  flex-direction: column;
+}
